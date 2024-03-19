@@ -1,0 +1,15 @@
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\bin\Debug\net7.0\CommonHelper.deps.json
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\bin\Debug\net7.0\CommonHelper.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\bin\Debug\net7.0\CommonHelper.pdb
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\obj\Debug\net7.0\CommonHelper.csproj.AssemblyReference.cache
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\obj\Debug\net7.0\CommonHelper.GeneratedMSBuildEditorConfig.editorconfig
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\obj\Debug\net7.0\CommonHelper.AssemblyInfoInputs.cache
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\obj\Debug\net7.0\CommonHelper.AssemblyInfo.cs
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\obj\Debug\net7.0\CommonHelper.csproj.CoreCompileInputs.cache
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\obj\Debug\net7.0\CommonHelper.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\obj\Debug\net7.0\refint\CommonHelper.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\obj\Debug\net7.0\CommonHelper.pdb
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\obj\Debug\net7.0\ref\CommonHelper.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\bin\Debug\net7.0\Web_QLHoSo_So.Model.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\bin\Debug\net7.0\Web_QLHoSo_So.Model.pdb
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\CommonHelper\obj\Debug\net7.0\CommonHelper.csproj.CopyComplete

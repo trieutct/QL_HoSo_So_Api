@@ -1,0 +1,427 @@
+{
+  "format": 1,
+  "restore": {
+    "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Api\\Web_QLHoSo_So.Api.csproj": {}
+  },
+  "projects": {
+    "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\CommonHelper\\CommonHelper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\CommonHelper\\CommonHelper.csproj",
+        "projectName": "CommonHelper",
+        "projectPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\CommonHelper\\CommonHelper.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\CommonHelper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Model\\Web_QLHoSo_So.Model.csproj": {
+                "projectPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Model\\Web_QLHoSo_So.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Api\\Web_QLHoSo_So.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Api\\Web_QLHoSo_So.Api.csproj",
+        "projectName": "Web_QLHoSo_So.Api",
+        "projectPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Api\\Web_QLHoSo_So.Api.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\CommonHelper\\CommonHelper.csproj": {
+                "projectPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\CommonHelper\\CommonHelper.csproj"
+              },
+              "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Model\\Web_QLHoSo_So.Model.csproj": {
+                "projectPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Model\\Web_QLHoSo_So.Model.csproj"
+              },
+              "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Repository\\Web_QLHoSo_So.Repository.csproj": {
+                "projectPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Repository\\Web_QLHoSo_So.Repository.csproj"
+              },
+              "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Service\\Web_QLHoSo_So.Service.csproj": {
+                "projectPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Service\\Web_QLHoSo_So.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Model\\Web_QLHoSo_So.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Model\\Web_QLHoSo_So.Model.csproj",
+        "projectName": "Web_QLHoSo_So.Model",
+        "projectPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Model\\Web_QLHoSo_So.Model.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Repository\\Web_QLHoSo_So.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Repository\\Web_QLHoSo_So.Repository.csproj",
+        "projectName": "Web_QLHoSo_So.Repository",
+        "projectPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Repository\\Web_QLHoSo_So.Repository.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Model\\Web_QLHoSo_So.Model.csproj": {
+                "projectPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Model\\Web_QLHoSo_So.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Service\\Web_QLHoSo_So.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Service\\Web_QLHoSo_So.Service.csproj",
+        "projectName": "Web_QLHoSo_So.Service",
+        "projectPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Service\\Web_QLHoSo_So.Service.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\CommonHelper\\CommonHelper.csproj": {
+                "projectPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\CommonHelper\\CommonHelper.csproj"
+              },
+              "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Model\\Web_QLHoSo_So.Model.csproj": {
+                "projectPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Model\\Web_QLHoSo_So.Model.csproj"
+              },
+              "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Repository\\Web_QLHoSo_So.Repository.csproj": {
+                "projectPath": "H:\\Trieu\\Nam_4\\Ki2\\DATN\\Web_QLHoSo_So\\Web_QLHoSo_So.Repository\\Web_QLHoSo_So.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

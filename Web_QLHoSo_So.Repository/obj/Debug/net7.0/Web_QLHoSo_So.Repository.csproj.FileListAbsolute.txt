@@ -1,0 +1,17 @@
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\obj\Debug\net7.0\Web_QLHoSo_So.Repository.csproj.AssemblyReference.cache
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\obj\Debug\net7.0\Web_QLHoSo_So.Repository.GeneratedMSBuildEditorConfig.editorconfig
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\obj\Debug\net7.0\Web_QLHoSo_So.Repository.AssemblyInfoInputs.cache
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\obj\Debug\net7.0\Web_QLHoSo_So.Repository.AssemblyInfo.cs
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\obj\Debug\net7.0\Web_QLHoSo_So.Repository.csproj.CoreCompileInputs.cache
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\bin\Debug\net7.0\Web_QLHoSo_So.Repository.deps.json
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\bin\Debug\net7.0\Web_QLHoSo_So.Repository.runtimeconfig.json
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\bin\Debug\net7.0\Web_QLHoSo_So.Repository.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\bin\Debug\net7.0\Web_QLHoSo_So.Repository.pdb
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\bin\Debug\net7.0\Web_QLHoSo_So.Model.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\bin\Debug\net7.0\Web_QLHoSo_So.Model.pdb
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\obj\Debug\net7.0\Web_QLHoSo_So.Repository.csproj.CopyComplete
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\obj\Debug\net7.0\Web_QLHoSo_So.Repository.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\obj\Debug\net7.0\refint\Web_QLHoSo_So.Repository.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\obj\Debug\net7.0\Web_QLHoSo_So.Repository.pdb
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\obj\Debug\net7.0\Web_QLHoSo_So.Repository.genruntimeconfig.cache
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Repository\obj\Debug\net7.0\ref\Web_QLHoSo_So.Repository.dll

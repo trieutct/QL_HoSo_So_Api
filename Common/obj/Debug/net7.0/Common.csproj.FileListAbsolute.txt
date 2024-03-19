@@ -1,0 +1,12 @@
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Common\bin\Debug\net7.0\Common.deps.json
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Common\bin\Debug\net7.0\Common.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Common\bin\Debug\net7.0\Common.pdb
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Common\obj\Debug\net7.0\Common.csproj.AssemblyReference.cache
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Common\obj\Debug\net7.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Common\obj\Debug\net7.0\Common.AssemblyInfoInputs.cache
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Common\obj\Debug\net7.0\Common.AssemblyInfo.cs
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Common\obj\Debug\net7.0\Common.csproj.CoreCompileInputs.cache
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Common\obj\Debug\net7.0\Common.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Common\obj\Debug\net7.0\refint\Common.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Common\obj\Debug\net7.0\Common.pdb
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Common\obj\Debug\net7.0\ref\Common.dll

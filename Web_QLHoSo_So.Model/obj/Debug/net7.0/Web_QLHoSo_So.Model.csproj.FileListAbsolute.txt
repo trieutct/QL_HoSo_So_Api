@@ -1,0 +1,14 @@
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Model\bin\Debug\net7.0\Web_QLHoSo_So.Model.deps.json
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Model\bin\Debug\net7.0\Web_QLHoSo_So.Model.runtimeconfig.json
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Model\bin\Debug\net7.0\Web_QLHoSo_So.Model.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Model\bin\Debug\net7.0\Web_QLHoSo_So.Model.pdb
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Model\obj\Debug\net7.0\Web_QLHoSo_So.Model.csproj.AssemblyReference.cache
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Model\obj\Debug\net7.0\Web_QLHoSo_So.Model.GeneratedMSBuildEditorConfig.editorconfig
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Model\obj\Debug\net7.0\Web_QLHoSo_So.Model.AssemblyInfoInputs.cache
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Model\obj\Debug\net7.0\Web_QLHoSo_So.Model.AssemblyInfo.cs
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Model\obj\Debug\net7.0\Web_QLHoSo_So.Model.csproj.CoreCompileInputs.cache
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Model\obj\Debug\net7.0\Web_QLHoSo_So.Model.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Model\obj\Debug\net7.0\refint\Web_QLHoSo_So.Model.dll
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Model\obj\Debug\net7.0\Web_QLHoSo_So.Model.pdb
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Model\obj\Debug\net7.0\Web_QLHoSo_So.Model.genruntimeconfig.cache
+H:\Trieu\Nam_4\Ki2\DATN\Web_QLHoSo_So\Web_QLHoSo_So.Model\obj\Debug\net7.0\ref\Web_QLHoSo_So.Model.dll
