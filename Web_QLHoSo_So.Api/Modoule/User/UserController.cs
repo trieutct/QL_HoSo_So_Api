@@ -2,13 +2,14 @@
 using CommonHelper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using Web_QLHoSo_So.Api.Common;
 using Web_QLHoSo_So.Model.Dto;
 using Web_QLHoSo_So.Service.common;
 using Web_QLHoSo_So.Service.UserService;
 namespace Web_QLHoSo_So.Api.Modoule.User
 {
-    //[Authorize(Roles ="Admin")]
+    [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
@@ -24,6 +25,7 @@ namespace Web_QLHoSo_So.Api.Modoule.User
         [HttpGet]
         public IActionResult getAll([FromQuery] UserQuery? query)
         {
+            //var id=HttpContext.User.FindFirst(ClaimsConstant.USER_ID)?.Value;
             return ResponseApiCommon.Success(this.service.GetAll(query));
         }
         [HttpPost]

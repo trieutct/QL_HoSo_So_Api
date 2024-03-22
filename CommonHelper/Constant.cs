@@ -11,6 +11,10 @@ namespace CommonHelper
         public static int expiresIn { get; } = 60;
         public static int refresh_expiresIn { get; } = 120;
     }
+    public static class ClaimsConstant
+    {
+        public const string USER_ID = "UserId";
+    }
     public static class CommonHttpStatus
     {
         // Informational 1xx

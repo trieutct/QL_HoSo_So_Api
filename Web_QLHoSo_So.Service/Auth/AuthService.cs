@@ -63,8 +63,7 @@ namespace Web_QLHoSo_So.Service.Auth
                 {
                     new Claim(ClaimTypes.Role,"Admin"),
                     new Claim(ClaimTypes.Name,user.UserName),
-                    //new Claim(ClaimTypes.Email,accountClient.Fullname),
-                    new Claim("UserId",user.Id.ToString())
+                    new Claim(ClaimsConstant.USER_ID,user.Id.ToString())
                 };
             var token = new JwtSecurityToken
             (
