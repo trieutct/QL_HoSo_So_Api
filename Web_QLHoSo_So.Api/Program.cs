@@ -1,9 +1,11 @@
 ﻿using CommonHelper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using Web_QLHoSo_So.Api.PolicyBaseAuthProvider;
 using Web_QLHoSo_So.Model.Entities;
 using Web_QLHoSo_So.Model.Mapping;
 using Web_QLHoSo_So.Repository;
@@ -90,6 +92,10 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+
+builder.Services.AddAuthorization();
+builder.Services.AddSingleton<IAuthorizationPolicyProvider, PermissionAuthorizationPolicyProvider>();
+builder.Services.AddSingleton<IAuthorizationHandler, PermissionAuthorizationHandler>();
 
 
 

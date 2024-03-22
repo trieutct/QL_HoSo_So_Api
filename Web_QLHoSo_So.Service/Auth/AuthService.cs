@@ -61,10 +61,22 @@ namespace Web_QLHoSo_So.Service.Auth
 
             var claims = new List<Claim>
                 {
-                    new Claim(ClaimTypes.Role,"Admin"),
+                    new Claim(ClaimsConstant.ROLE,"Admin"),
                     new Claim(ClaimTypes.Name,user.UserName),
                     new Claim(ClaimsConstant.USER_ID,user.Id.ToString())
                 };
+
+
+
+            var permissions = new List<Permission>
+            {
+                new Permission { Name = "Read" },
+                new Permission { Name = "List" },
+            };
+            foreach (var permission in permissions)
+            {
+                claims.Add(new Claim(ClaimsConstant.PERMISSION, permission.Name.ToString()));
+            }
             var token = new JwtSecurityToken
             (
                   issuer: this._jwtSetting.Issuer,
@@ -76,5 +88,10 @@ namespace Web_QLHoSo_So.Service.Auth
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+    }
+
+    public class Permission
+    {
+        public string Name { get; set; }
     }
 }

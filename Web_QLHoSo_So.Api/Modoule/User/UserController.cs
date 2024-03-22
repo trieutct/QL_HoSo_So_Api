@@ -4,12 +4,13 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Web_QLHoSo_So.Api.Common;
+using Web_QLHoSo_So.Api.PolicyBaseAuthProvider;
 using Web_QLHoSo_So.Model.Dto;
 using Web_QLHoSo_So.Service.common;
 using Web_QLHoSo_So.Service.UserService;
 namespace Web_QLHoSo_So.Api.Modoule.User
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
@@ -22,6 +23,7 @@ namespace Web_QLHoSo_So.Api.Modoule.User
             this.mapper = mapper;
         }
         //[AllowAnonymous]
+        [HasPermision(Permission.Read)]
         [HttpGet]
         public IActionResult getAll([FromQuery] UserQuery? query)
         {
@@ -53,6 +55,7 @@ namespace Web_QLHoSo_So.Api.Modoule.User
                 return ResponseApiCommon.Error(ex.Message);
             }
         }
+
         [HttpPut]
         public IActionResult put(UserDto dto)
         {
@@ -86,6 +89,7 @@ namespace Web_QLHoSo_So.Api.Modoule.User
             }
         }
         [HttpDelete("softDelete")]
+        [HasPermision(Permission.Update)]
         public IActionResult softdelete(Guid id)
         {
             try
