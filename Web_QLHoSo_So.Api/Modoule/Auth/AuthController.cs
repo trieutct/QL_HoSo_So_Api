@@ -18,11 +18,11 @@ namespace Web_QLHoSo_So.Api.Modoule.Auth
             this.authService = Service;
         }
         [HttpPost("login")]
-        public IActionResult login(LoginVM login)
+        public IActionResult login([FromBody]LoginVM login)
         {
             try
             {
-                var data = authService.checklogin(login.userName, login.passWord);
+                var data = authService.checklogin(login.email, login.password);
                 if (data != string.Empty)
                 {
                     return ResponseApiCommon.Success(data, "Đăng nhập thành công");

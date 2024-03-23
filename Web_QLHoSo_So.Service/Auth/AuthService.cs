@@ -34,7 +34,7 @@ namespace Web_QLHoSo_So.Service.Auth
                 }
                 return new
                 {
-                    token = new
+                    accessToken = new
                     {
                         token=this.GenerateToken(user,JwtConstant.expiresIn),
                         expiresIn=JwtConstant.expiresIn
@@ -77,15 +77,17 @@ namespace Web_QLHoSo_So.Service.Auth
             {
                 claims.Add(new Claim(ClaimsConstant.PERMISSION, permission.Name.ToString()));
             }
+            var date = DateTime.Now;
+            var date1 = DateTime.Now.AddMinutes(1);
             var token = new JwtSecurityToken
             (
                   issuer: this._jwtSetting.Issuer,
                   audience: this._jwtSetting.Audience,
-                  expires: DateTime.Now.AddSeconds(time),
+                  expires: date1,
+                  notBefore: date,
                   signingCredentials: signingCredential,
                   claims: claims
             );
-
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
