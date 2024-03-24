@@ -35,7 +35,7 @@ namespace Web_QLHoSo_So.Api.Modoule.User
         {
             try
             {
-                if(!this.service.checkUser(dto.UserName))
+                if(!this.service.checkUser(dto.Email))
                 {
                     dto.Password = Helper.hashPassword(dto.Password);
                     if (this.service.Add(dto))
@@ -64,9 +64,9 @@ namespace Web_QLHoSo_So.Api.Modoule.User
                 var user = this.service.GetById(dto.Id);
                 if (user!=null)
                 {
-                    if(user.UserName!=dto.UserName)
+                    if(user.Email!=dto.Email)
                     {
-                        if(this.service.checkUser(dto.UserName))
+                        if(this.service.checkUser(dto.Email))
                         {
                             return ResponseApiCommon.Error("Username đã tồn tại", CommonHttpStatus.BadRequest);
                         }    

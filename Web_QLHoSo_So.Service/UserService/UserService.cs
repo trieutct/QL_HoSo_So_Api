@@ -46,7 +46,7 @@ namespace Web_QLHoSo_So.Service.UserService
             var list = _mapper.Map<List<UserDto>>(_repository.GetAll());
             if(query.keyword!=string.Empty)
             {
-                list=list.Where(x=>x.UserName.Equals(query.keyword)).ToList();
+                list=list.Where(x=>x.Email.Equals(query.keyword)).ToList();
             }    
             var resulteModel = new PageListResultBO<UserDto>();
             resulteModel.items = list.Skip(begin).Take(query.limit).ToList();
@@ -59,7 +59,7 @@ namespace Web_QLHoSo_So.Service.UserService
         }
         public bool checkUser(string username)
         {
-            var data= _repository.FindOne(x=>x.UserName==username);
+            var data= _repository.FindOne(x=>x.Email==username);
             if (data != null)
                 return true;
             return false;

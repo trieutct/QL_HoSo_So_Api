@@ -6,6 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 using Web_QLHoSo_So.Api.PolicyBaseAuthProvider;
+using Web_QLHoSo_So.Api.seed;
 using Web_QLHoSo_So.Model.Entities;
 using Web_QLHoSo_So.Model.Mapping;
 using Web_QLHoSo_So.Repository;
@@ -106,9 +107,14 @@ builder.Services.AddSwaggerGen(c =>
 
 
 
-
-
 var app = builder.Build();
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var dbContext = services.GetRequiredService<WebDbContext>();
+
+    SeedData.Seed(dbContext);
+}
 app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
 // Configure the HTTP request pipeline.

@@ -19,7 +19,7 @@ namespace Web_QLHoSo_So.Model.Entities
             {
                 e.ToTable("tbl_User");
                 e.HasKey(p => p.Id);
-                e.Property(p=>p.UserName).IsRequired().HasMaxLength(100);
+                e.Property(p=>p.FullName).IsRequired().HasMaxLength(100);
                 e.Property(p=>p.Password).IsRequired().HasMaxLength(500);
             });
         }

@@ -27,7 +27,7 @@ namespace Web_QLHoSo_So.Service.Auth
         {
             try
             {
-                var user = this._repo.FindOne(x => x.UserName.Equals(username));
+                var user = this._repo.FindOne(x => x.Email.Equals(username) && x.DeleteAt==null);
                 if (user == null || !Helper.verifyPassword(password, user.Password))
                 {
                     return string.Empty;
@@ -62,7 +62,7 @@ namespace Web_QLHoSo_So.Service.Auth
             var claims = new List<Claim>
                 {
                     new Claim(ClaimsConstant.ROLE,"Admin"),
-                    new Claim(ClaimTypes.Name,user.UserName),
+                    new Claim(ClaimTypes.Name,user.FullName),
                     new Claim(ClaimsConstant.USER_ID,user.Id.ToString())
                 };
 
@@ -77,14 +77,12 @@ namespace Web_QLHoSo_So.Service.Auth
             {
                 claims.Add(new Claim(ClaimsConstant.PERMISSION, permission.Name.ToString()));
             }
-            var date = DateTime.Now;
-            var date1 = DateTime.Now.AddMinutes(1);
             var token = new JwtSecurityToken
             (
                   issuer: this._jwtSetting.Issuer,
                   audience: this._jwtSetting.Audience,
-                  expires: date1,
-                  notBefore: date,
+                  expires: DateTime.Now.AddSeconds(time),
+                  notBefore: DateTime.Now,
                   signingCredentials: signingCredential,
                   claims: claims
             );
