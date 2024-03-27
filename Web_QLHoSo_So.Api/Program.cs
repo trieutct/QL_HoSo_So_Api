@@ -10,8 +10,10 @@ using Web_QLHoSo_So.Api.seed;
 using Web_QLHoSo_So.Model.Entities;
 using Web_QLHoSo_So.Model.Mapping;
 using Web_QLHoSo_So.Repository;
+using Web_QLHoSo_So.Repository.KhoRepo;
 using Web_QLHoSo_So.Repository.UserRepo;
 using Web_QLHoSo_So.Service.Auth;
+using Web_QLHoSo_So.Service.KhoService;
 using Web_QLHoSo_So.Service.UserService;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,8 +34,10 @@ builder.Services.AddDbContext<WebDbContext>(option =>
 option.UseSqlServer(builder.Configuration.GetConnectionString("Myconn")));
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IUserRepo, UserRepo>();
+builder.Services.AddScoped<IKhoRepo, KhoRepo>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IKhoService, KhoService>();
 
 
 

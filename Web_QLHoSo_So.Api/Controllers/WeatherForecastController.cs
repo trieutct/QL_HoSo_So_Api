@@ -1,5 +1,7 @@
+using CommonHelper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Web_QLHoSo_So.Api.PolicyBaseAuthProvider;
 
 namespace Web_QLHoSo_So.Api.Controllers
 {
@@ -19,7 +21,7 @@ namespace Web_QLHoSo_So.Api.Controllers
         {
             _logger = logger;
         }
-
+        [HasPermision(Permission.READ)]
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {

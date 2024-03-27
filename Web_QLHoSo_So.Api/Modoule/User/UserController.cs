@@ -23,7 +23,7 @@ namespace Web_QLHoSo_So.Api.Modoule.User
             this.mapper = mapper;
         }
         //[AllowAnonymous]
-        [HasPermision(Permission.Read)]
+        [HasPermision(Permission.READ)]
         [HttpGet]
         public IActionResult getAll([FromQuery] UserQuery? query)
         {
@@ -89,7 +89,7 @@ namespace Web_QLHoSo_So.Api.Modoule.User
             }
         }
         [HttpDelete("softDelete")]
-        [HasPermision(Permission.Update)]
+        //[HasPermision(Permission.Update)]
         public IActionResult softdelete(Guid id)
         {
             try

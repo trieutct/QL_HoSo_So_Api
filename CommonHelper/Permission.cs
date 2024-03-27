@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace CommonHelper
 {
-    public enum Permission
+    public  class Permission
     {
-        Read=1,
-        List=2,
-        Write=3,
-        Modify=4, 
-        Delete=5,
-        Update=6,
+       public const string READ = "Read";
+        public const string LIST = "List";
+        public const string UPDATE = "Update";
     }
 }

@@ -14,6 +14,7 @@ namespace Web_QLHoSo_So.Model.Mapping
         public MappingProfile()
         {
             CreateMap<User, UserDto>().ReverseMap();
+            CreateMap<Kho, KhoDto>().ReverseMap();
         }
     }
 }

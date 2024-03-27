@@ -13,6 +13,7 @@ namespace Web_QLHoSo_So.Model.Entities
         {
         }
         public DbSet<User> Users { get; set; }
+        public DbSet<Kho> Khos { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>(e =>
@@ -21,6 +22,13 @@ namespace Web_QLHoSo_So.Model.Entities
                 e.HasKey(p => p.Id);
                 e.Property(p=>p.FullName).IsRequired().HasMaxLength(100);
                 e.Property(p=>p.Password).IsRequired().HasMaxLength(500);
+            });
+            modelBuilder.Entity<Kho>(e =>
+            {
+                e.ToTable("tbl_Kho");
+                e.HasKey(p => p.Id);
+                e.Property(p => p.MaKho).IsRequired();
+                e.HasIndex(p => p.MaKho).IsUnique();
             });
         }
     }
