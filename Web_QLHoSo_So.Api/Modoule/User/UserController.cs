@@ -108,7 +108,7 @@ namespace Web_QLHoSo_So.Api.Modoule.User
                 return ResponseApiCommon.Error(ex.Message, CommonHttpStatus.InternalServerError);
             }
         }
-        [HttpGet(":id")]
+        [HttpGet("{id}")]
         public IActionResult getById(Guid id)
         {
             try

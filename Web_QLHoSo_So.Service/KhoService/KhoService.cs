@@ -54,5 +54,10 @@ namespace Web_QLHoSo_So.Service.KhoService
         {
             return _mapper.Map<KhoDto>(_repository.GetbyId(id));
         }
+
+        public IEnumerable<KhoDto> getALL_NoQuey()
+        {
+            return _mapper.Map<List<KhoDto>>(_repository.GetAll());
+        }
     }
 }

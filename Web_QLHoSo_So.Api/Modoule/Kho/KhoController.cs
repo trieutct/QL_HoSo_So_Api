@@ -25,13 +25,26 @@ namespace Web_QLHoSo_So.Api.Modoule.Kho
             return ResponseApiCommon.Success(this.service.GetAll(query));
         }
         [HttpPost]
-        public IActionResult post(KhoDto dto)
+        public IActionResult post(KhoVM dto)
         {
+            var Khodto = new KhoDto()
+            {
+                Id=Guid.NewGuid(),
+                Description=dto.Description,
+                Location    =dto.Location,
+                MaKho=dto.MaKho,
+                Name=dto.Name,
+                Note=dto.Note,
+            };
             try
             {
-                if (this.service.Add(dto))
+                if(this.service.getALL_NoQuey().Where(x=>x.Name.Equals(dto.Name) || x.MaKho.Equals(dto.MaKho)).FirstOrDefault()!=null)
                 {
-                    return ResponseApiCommon.Success(dto);
+                    return ResponseApiCommon.Error("Kho đã tồn tại", CommonHttpStatus.BadRequest);
+                }
+                if (this.service.Add(Khodto))
+                {
+                    return ResponseApiCommon.Success(dto, "Tạo mới thành công kho");
                 }
                 else
                 {
@@ -44,7 +57,7 @@ namespace Web_QLHoSo_So.Api.Modoule.Kho
             }
         }
 
-        [HttpPut]
+        [HttpPatch("{id}")]
         public IActionResult put(KhoDto dto)
         {
             try
@@ -68,7 +81,7 @@ namespace Web_QLHoSo_So.Api.Modoule.Kho
                 return ResponseApiCommon.Error(ex.Message, CommonHttpStatus.InternalServerError);
             }
         }
-        [HttpDelete("softDelete")]
+        [HttpDelete("softDelete/{id}")]
         //[HasPermision(Permission.Update)]
         public IActionResult softdelete(Guid id)
         {
@@ -77,7 +90,7 @@ namespace Web_QLHoSo_So.Api.Modoule.Kho
                 if (this.service.GetById(id) != null)
                 {
                     if (this.service.softDelete(id))
-                        return ResponseApiCommon.Success(id);
+                        return ResponseApiCommon.Success(id, "Xóa mềm thành công kho: "+id);
                     else
                         return ResponseApiCommon.Error("Xóa Kho thất bại", CommonHttpStatus.InternalServerError);
                 }
@@ -88,7 +101,7 @@ namespace Web_QLHoSo_So.Api.Modoule.Kho
                 return ResponseApiCommon.Error(ex.Message, CommonHttpStatus.InternalServerError);
             }
         }
-        [HttpGet(":id")]
+        [HttpGet("{id}")]
         public IActionResult getById(Guid id)
         {
             try
@@ -102,6 +115,34 @@ namespace Web_QLHoSo_So.Api.Modoule.Kho
             catch (CommonException ex)
             {
                 return ResponseApiCommon.Error(ex.Message, ex.StatusCode);
+            }
+        }
+        [HttpPost("softDeleteMutiple")]
+        //[HasPermision(Permission.Update)]
+        public IActionResult softDeleteMutiple(List<Guid> ids)
+        {
+            try
+            {
+                int successCount = 0;
+                foreach (var id in ids)
+                {
+                    if (this.service.softDelete(id))
+                    {
+                        successCount++;
+                    }
+                }
+                if (successCount > 0)
+                {
+                    return ResponseApiCommon.Success(ids, "Xóa mềm thành công " + successCount + " kho.");
+                }
+                else
+                {
+                    return ResponseApiCommon.Error("Không có kho nào được xóa mềm.", CommonHttpStatus.NotFound);
+                }
+            }
+            catch (Exception ex)
+            {
+                return ResponseApiCommon.Error(ex.Message, CommonHttpStatus.InternalServerError);
             }
         }
     }

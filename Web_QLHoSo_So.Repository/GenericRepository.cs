@@ -20,7 +20,7 @@ namespace Web_QLHoSo_So.Repository
         }
         public IEnumerable<T> GetAll()
         {
-            return _dbSet.ToList().Where(x=>x.DeleteAt==null).OrderByDescending(x=>x.CreateAt);
+            return _dbSet.ToList().Where(x=>x.DeleteAt==null).OrderByDescending(x=>x.CreateAt).ThenByDescending(x => x.UpdateAt); ;
         }
         public T GetbyId(Guid id)
         {
@@ -48,6 +48,7 @@ namespace Web_QLHoSo_So.Repository
                 {
                     return false;
                 }
+                entity.CreateAt = existingEntity.CreateAt;
                 _context.Entry(existingEntity).CurrentValues.SetValues(entity);
             }
             //_context.Entry(entity).State = EntityState.Modified;

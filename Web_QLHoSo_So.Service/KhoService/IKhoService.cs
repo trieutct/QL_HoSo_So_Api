@@ -16,5 +16,6 @@ namespace Web_QLHoSo_So.Service.KhoService
         bool Update(KhoDto OrderDto);
         bool Delete(Guid id);
         bool softDelete(Guid id);
+        IEnumerable<KhoDto> getALL_NoQuey();
     }
 }
